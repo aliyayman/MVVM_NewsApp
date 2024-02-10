@@ -6,3 +6,5 @@
 5-Coroutine<br>
 6-Live data<br>
 7-Glide
+
+app/src/main/res/values/screenView.png
