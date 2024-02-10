@@ -2,10 +2,10 @@ package com.aliyayman.mvvm_news.ui.fragments
 
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
@@ -13,8 +13,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.aliyayman.mvvm_news.R
 import com.aliyayman.mvvm_news.adapters.NewsAdapter
 import com.aliyayman.mvvm_news.databinding.FragmentBreakingNewsBinding
-import com.aliyayman.mvvm_news.model.Article
-import com.aliyayman.mvvm_news.model.Source
 import com.aliyayman.mvvm_news.ui.activty.NewsActivity
 import com.aliyayman.mvvm_news.util.Resource
 import com.aliyayman.mvvm_news.viewmodels.NewsViewModel
@@ -66,7 +64,7 @@ class BreakingNewsFragment : Fragment() {
                 is Resource.Error->{
                     hideProgressBar()
                     response.message?.let {message->
-                        Log.e("Tag","An error occured: $message")
+                        Toast.makeText(activity,"An error occured: $message",Toast.LENGTH_LONG).show()
                     }
 
                 }
