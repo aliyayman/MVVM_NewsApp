@@ -7,4 +7,4 @@
 6-Live data<br>
 7-Glide
 
-https://github.com/aliyayman/MVVM_NewsApp/commit/ce871e84ab2b78436702be992d4e90340fcf8b2f
+<a>https://github.com/aliyayman/MVVM_NewsApp/commit/ce871e84ab2b78436702be992d4e90340fcf8b2f</a>
